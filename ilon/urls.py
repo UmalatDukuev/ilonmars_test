@@ -18,9 +18,10 @@ from django.contrib import admin
 from django.urls import path
 
 from report.views import index, get_report
+from user.views import new_scientist
 
 urlpatterns = [
-    #path('admin/', admin.site.urls),
-    path('/', index),
-    path('get_report/', get_report),
+    path('admin/', admin.site.urls),
+    path('report/get_report', get_report),
+    path('user/new_scientist', new_scientist)
 ]

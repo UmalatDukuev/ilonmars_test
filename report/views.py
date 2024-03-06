@@ -5,9 +5,9 @@ from django.shortcuts import render
 
 
 def index(request):
-    return HttpResponse("AAAA32222222321AA2AAAAAAAAAAA")
+    return HttpResponse("index")
 
 
 def get_report(request):
     print(request)
-    return HttpResponse("BB3223222222222BBBBBBBBB")
+    return render(request, 'report.html')
