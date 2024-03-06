@@ -10,4 +10,4 @@ def index(request):
 
 def get_report(request):
     print(request)
-    return render(request, 'report.html')
+    return render(request, 'report.html')1
